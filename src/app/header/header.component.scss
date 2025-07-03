@@ -8,3 +8,23 @@
 .nav-link:hover {
     color: #fff !important;
 }
+
+.heartbeat-element {
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Initial Shadow */
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.05); /* Slight expansion */
+    // box-shadow:0 0 15px rgba(0, 0, 0, 0.5); /* Increased shadow */
+  }
+100% {
+    transform: scale(1);
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
