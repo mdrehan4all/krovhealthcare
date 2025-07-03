@@ -1,0 +1,129 @@
+<app-breadcrumb [heading]="'Franchise'" [descTitle]="'Digvet Franchise'"
+    [descText]="'Join our growing network of successful pharmacies and healthcare centers across India.'"
+    [links]="[{name: 'Franchise', path: '/franchise'}]">
+</app-breadcrumb>
+
+<div class="container mt-5 mb-5">
+    <div class="row border shadow rounded-4" data-aos="fade-up" data-aos-duration="1000"
+        style="background-color: #477d8533">
+        <div class="col-md-12 p-4 text-center">
+            <h1 style="color: #477d85">Khole Apna Pharmacy</h1>
+            <h3>Invest 11.5 Lakh</h3>
+            <h3>Opportunity to earn 1.5* lakh per month</h3>
+            <div class="row">
+                <div class="col-md-12 my-5">
+                    <span class="theme-btn mb-5">Our Support</span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-file-text"></i> <br/> All Licenses Procurement</h5>
+                      <p class="card-text">We handle all regulatory compliance and licensing requirements.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-person"></i> <br/> Doctor OPD Arrangement</h5>
+                      <p class="card-text">We arrange doctor consultations and OPD services at your location.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-megaphone"></i> <br/> Marketing Online/Offline Support</h5>
+                      <p class="card-text">Comprehensive marketing support both online and offline.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-people"></i> <br/> Staff Recruitment</h5>
+                      <p class="card-text">Help with recruiting qualified pharmacy staff professionals quickly and efficiently always.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-box"></i> <br/> Medicine Supply</h5>
+                      <p class="card-text">Regular supply of quality medicines at competitive prices.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-building"></i> <br/> Master Franchise in Your State</h5>
+                      <p class="card-text">Opportunity to become a master franchisee in your state.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-calendar2-week"></i> <br/> Expiry Management & More</h5>
+                      <p class="card-text">Assistance with expiry management and other operational aspects.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div style="background-color: #ffffff;" class="row border rounded shadow mt-5 py-5 px-3 aos-init aos-animate" data-aos="zoom-out-up"
+                data-aos-duration="1500">
+                <div class="col-md-5">
+                    <img src="franchise.jpg" class="w-100">
+                </div>
+                <div class="col-md-7 text-start">
+                    <h2 class="text-center mb-4">Franchise Application Form</h2>
+                    <form [formGroup]="formGroup" (submit)="submit()">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter name" required="" formControlName="name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Enter email" required="" formControlName="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" name="phone" placeholder="Enter phone"
+                                        required="" formControlName="phone">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="location" class="form-label">Preferred Location for Franchise</label>
+                                    <input type="text" class="form-control" name="location" placeholder="Enter location"
+                                        required="" formControlName="location">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="businessExperience" class="form-label">Business Experience (if any)</label>
+                            <textarea class="form-control" id="businessExperience" rows="3" name="experience"
+                                placeholder="Enter experience" formControlName="experience"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="investment" class="form-label">How much are you willing to invest?</label>
+                            <input type="number" class="form-control" name="investment" placeholder="Enter amount"
+                                required="" formControlName="amount">
+                        </div>
+                        <button type="submit" class="btn btn-primary" name="submit" (submit)="submit()">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

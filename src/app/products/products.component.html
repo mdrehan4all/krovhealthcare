@@ -1,0 +1,33 @@
+<app-breadcrumb 
+    [heading]="'PRODUCTS'" 
+    [descTitle]="'Our Products'" 
+    [descText]="'Discover our innovative pharmaceutical solutions designed to address various healthcare needs and improve quality of life.'" 
+    [links]="[{name: 'Products', path: '/products'}]">
+</app-breadcrumb>
+
+<div class="container mt-5 mb-5">
+    <div class="row rounded-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-12 p-4">
+          <a class="btn btn-primary rounded-4 m-1" (click)="showAllProducts()">All</a>
+          <a *ngFor="let c of categories" class="btn btn-primary rounded-4 m-1" (click)="showCategoryProducts(c.id)" ><span [innerHTML]="categoryIcons[c.name]"></span> {{ c.name }}</a>
+        </div>
+
+        @if(isLoading){
+          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        }
+        
+        <div class="col-md-4 p-4 btn-animate" *ngFor="let product of products" data-aos="fade-up" data-aos-duration="700">
+            <div class="card shadow border-0" style="width: 100%;">
+                <div class="card-img-top" style="background-position: center;background-size: 105%;width: 100%; height: 200px;background-image: url({{ product.image }})"></div>
+                <div class="card-body">
+                  <h5 class="card-title" data-aos="fade-up" data-aos-duration="700">{{ product.name }}</h5>
+                  <p class="card-text" data-aos="fade-up" data-aos-duration="1200">
+                    <span ngbTooltip="{{product.composition}}" style="white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;display: block;">{{ product.composition }}</span>{{ product.packing }} &middot; {{ product.pack }} &middot; Rs.{{ product.mrp }}</p>
+                  <a class="btn btn-primary rounded-4">{{ getCategoryName(product.cid)}}</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.slide-text{
+    position: relative;
+    top: -80vh;
+    text-align: center;
+    max-width: 700px;
+    margin: 0px auto;
+    color:#fff;;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.slide-h1 {
+    // font-size: 4.5rem;
+    font-size: calc(2rem + 2vw);
+    text-shadow: 0 0 15px #000, 0 0 0px #000, 0 0 0px #333;
+}
+.slide-span{
+    text-shadow: 0 0 15px #000,
+    0 0 15px #fff,
+    0 0 3px #000;
+}
+.carousel-control-prev{
+    top: -25% !important;
+}
+.carousel-control-next{
+    top: -25% !important;
+}
+.bi{
+    font-size: 60px;
+    color: #01AAC1;
+}

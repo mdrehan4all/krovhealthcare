@@ -1,0 +1,15 @@
+@if (status == 'active') {
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+} @else if (status == 'deactive') {
+<!-- IF NOT ACTIVATED -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center mt-5">
+            <p>{{ header }}</p>
+            <h1>{{ message }}</h1>
+        </div>
+    </div>
+</div>
+}

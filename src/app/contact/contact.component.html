@@ -1,0 +1,58 @@
+<app-breadcrumb 
+    [heading]="'CONTACT US'" 
+    [descTitle]="'Get in Touch'"
+    [descText]="'We\'d love to hear from you. Reach out to us with any questions, inquiries, or to schedule a consultation.'"
+    [links]="[{name: 'Contact', path: '/contact'}]"
+    [icon]="'phone'">
+</app-breadcrumb>
+
+<div class="container mt-5 mb-5">
+    <div class="row rounded-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-6 p-4">
+            <img src="contact.jpg" class="rounded-3 w-100"/>    
+        </div>
+        <div class="col-md-6 p-4">
+            <h2 style="font-size: 2rem;letter-spacing: -.025em;font-weight: 700;" class="mb-4">Contact Information</h2>
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <mat-icon class="icon">map</mat-icon>
+                </div>
+                <div class="col-md-10">
+                    <strong>Our Location</strong>
+                    <p>Krov Healthcare Private Limited, Patna, Bihar 800011</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <mat-icon class="icon">phone</mat-icon>
+                </div>
+                <div class="col-md-10">
+                    <strong>Phone Number</strong>
+                    <p>+918210614418</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <mat-icon class="icon">email</mat-icon>
+                </div>
+                <div class="col-md-10">
+                    <strong>Email Address</strong>
+                    <p>krovhealthcare{{ '@' }}gmail.com</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <mat-icon class="icon">access_time</mat-icon>
+                </div>
+                <div class="col-md-10">
+                    <strong>Business Hours</strong>
+                    <p>Mon - Fri: 9AM - 6PM</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

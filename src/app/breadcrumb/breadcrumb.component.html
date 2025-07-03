@@ -1,0 +1,13 @@
+<div style="margin-top:170px;"></div>
+<div class="container" data-aos="fade-up" data-aos-duration="600">
+    <div class="row">
+        <div class="col-md-12 mt-4 text-center">
+            <div class="btn" style="border-radius: 20px;backdrop-filter: blur(7px); background-color: #01AAC133;color:#01AAC1;font-size: 12px;font-weight: 500;">
+                <span><mat-icon style="font-size: 14px;height: 13px;">{{ icon }}</mat-icon>{{ heading }}</span>
+            </div>
+            <p data-aos="fade-up" data-aos-duration="800"><button routerLink="/" mat-button>Home</button> <button mat-button *ngFor="let d of links"><mat-icon>keyboard_arrow_right</mat-icon>{{ d.name }}</button></p>
+            <h1 style="font-size: 3rem;letter-spacing: -.025em;font-weight: 700;" data-aos="fade-up" data-aos-duration="1000">{{ descTitle }}</h1>
+            <p style="color:#01AAC1;font-size: 1.25rem;max-width: 42rem;margin-left: auto;margin-right: auto;" data-aos="fade-up" data-aos-duration="1200">{{ descText }}</p>
+        </div>
+    </div>
+</div>
